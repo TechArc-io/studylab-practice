@@ -1,5 +1,7 @@
 # `ms-react-ui` — Build an accessible filterable list
 
+Follow the shared [`docs/git-workflow.md`](../docs/git-workflow.md) and submit the reviewed PR from your fork in Astudylab.
+
 **Outcome:** implement controlled state, derived results, and complete async UI states without breaking keyboard or screen-reader access.
 
 ## Scenario

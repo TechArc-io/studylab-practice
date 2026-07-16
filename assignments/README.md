@@ -13,3 +13,5 @@ Open the assignment whose ID matches the task in Astudylab. Do not work ahead me
 | `capstone-frontend` | [Ship the cumulative capstone](07-capstone.md) | PR, deployment, and rationale |
 
 The repository provides a working baseline, not hidden answer code. Each assignment describes a real change to make in your fork. Your mentor evaluates the implementation and the evidence—not just whether a file exists.
+
+For every assignment, follow [the shared Git workflow](../docs/git-workflow.md): branch from updated `main`, open a PR into your fork's `main`, wait for `Practice quality`, request mentor review, and submit the PR URL in Astudylab.

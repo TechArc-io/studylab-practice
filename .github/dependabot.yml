@@ -15,6 +15,11 @@ updates:
       # patch/minor updates flowing without opening a known-incompatible major.
       - dependency-name: eslint
         update-types: ["version-update:semver-major"]
+      # TypeScript 7 is outside the supported peer range of the current
+      # typescript-eslint toolchain. Keep safe 5.x updates flowing until the
+      # Next.js lint preset and typescript-eslint support the same major.
+      - dependency-name: typescript
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: github-actions
     directory: /
     schedule:

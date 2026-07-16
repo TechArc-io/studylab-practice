@@ -14,13 +14,33 @@ concurrency:
 
 jobs:
   check:
+    name: Practice quality
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Check out the learner branch
+        uses: actions/checkout@v4
+      - name: Use the repository Node version
+        uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
           cache: npm
-      - run: npm ci
-      - run: npm run check
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Validate learner pull-request contract
+        if: github.event_name == 'pull_request' && github.event.pull_request.base.repo.fork
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_HEAD_REF: ${{ github.head_ref }}
+          PR_BASE_REF: ${{ github.base_ref }}
+        run: npm run check:pr-contract
+      - name: Lint
+        run: npm run lint
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Validate curriculum alignment
+        run: npm run check:catalog
+      - name: Test
+        run: npm test
+      - name: Build
+        run: npm run build

@@ -19,7 +19,10 @@ This repository is designed to be forked once and improved throughout the curric
    ```
 
 4. Open the assignment linked from your Astudylab task.
-5. Create one branch per assignment, make the change, run the required checks, and open a pull request to `TechArc-io/studylab-practice`.
+5. Create one branch per assignment, make the change, run the required checks, and open a pull request into `main` **inside your fork**.
+6. Wait for the `Practice quality` check, request mentor review, and paste that pull-request URL into Astudylab. Merge into your fork only after approval.
+
+The canonical `TechArc-io/studylab-practice` repository stays a clean starting point. Your fork is your cumulative learning record; assignments are not merged into the canonical repository.
 
 ## Learning workspace
 
@@ -40,6 +43,7 @@ Read [CURRICULUM.md](CURRICULUM.md) for the progression and [CONTRIBUTING.md](CO
 npm run dev        # local Next.js development server
 npm run lint       # zero-warning lint
 npm run typecheck  # TypeScript verification
+npm run check:catalog # curriculum/assignment contract verification
 npm test           # unit and component tests
 npm run build      # production build
 npm run check      # complete local quality gate

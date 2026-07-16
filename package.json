@@ -12,10 +12,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --max-warnings=0",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
     "check:catalog": "node scripts/check-curriculum-map.mjs",
+    "check:pr-contract": "node scripts/check-pr-contract.mjs",
     "check": "npm run lint && npm run typecheck && npm run check:catalog && npm test && npm run build"
   },
   "dependencies": {

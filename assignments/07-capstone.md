@@ -1,5 +1,7 @@
 # `capstone-frontend` — Ship a cumulative frontend feature
 
+Follow the shared [`docs/git-workflow.md`](../docs/git-workflow.md) and submit the reviewed PR from your fork in Astudylab.
+
 **Outcome:** deliver a small, complete product slice that demonstrates the pathway’s required capabilities and can be defended in review.
 
 ## Product brief
@@ -39,4 +41,4 @@ git diff --check
 
 ## Submit
 
-Provide the pull-request URL and deployment URL in Astudylab. In the PR, explain the architecture, key tradeoffs, verification evidence, limitations, and what AI assisted with. A deployment alone is not passing evidence; the mentor reviews the implementation and rationale against the Astudylab rubric.
+Provide the pull-request URL from your fork and deployment URL in Astudylab. In the PR, explain the architecture, key tradeoffs, verification evidence, limitations, and what AI assisted with. A deployment alone is not passing evidence; the mentor reviews the implementation and rationale against the Astudylab rubric.
