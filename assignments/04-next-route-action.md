@@ -1,5 +1,7 @@
 # `ms-next-route` — Ship an App Router route with a Server Action
 
+Follow the shared [`docs/git-workflow.md`](../docs/git-workflow.md) and submit the reviewed PR from your fork in Astudylab.
+
 **Outcome:** use the correct server/client boundaries for a dynamic route and validated mutation.
 
 ## Scenario

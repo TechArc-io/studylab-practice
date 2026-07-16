@@ -16,6 +16,15 @@ for (const assignment of catalog.assignments ?? []) {
   if (!catalog.modules?.includes(assignment.moduleId)) {
     errors.push(`${assignment.id} references unknown module ${assignment.moduleId}`);
   }
+  if (assignment.submission?.target !== "learner-fork") {
+    errors.push(`${assignment.id} must submit to the learner's fork`);
+  }
+  if (assignment.submission?.evidence !== "github-pr") {
+    errors.push(`${assignment.id} must use GitHub pull-request evidence`);
+  }
+  if (!assignment.submission?.requiredChecks?.includes("Practice quality")) {
+    errors.push(`${assignment.id} must require the Practice quality check`);
+  }
   const path = resolve(root, assignment.path ?? "");
   if (!assignment.path?.startsWith("assignments/") || !existsSync(path)) {
     errors.push(`${assignment.id} has a missing assignment path: ${assignment.path}`);
@@ -24,6 +33,9 @@ for (const assignment of catalog.assignments ?? []) {
   const body = readFileSync(path, "utf8");
   if (!body.includes(`\`${assignment.id}\``)) {
     errors.push(`${assignment.path} does not declare stable id ${assignment.id}`);
+  }
+  if (!body.includes("docs/git-workflow.md") && assignment.id !== "ms-git-collab") {
+    errors.push(`${assignment.path} must link to the shared Git workflow`);
   }
 }
 

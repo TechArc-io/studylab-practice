@@ -20,12 +20,12 @@
     "capstone"
   ],
   "assignments": [
-    { "id": "ms-git-collab", "moduleId": "git-github", "path": "assignments/01-git-collaboration.md" },
-    { "id": "ms-ts-types", "moduleId": "typescript", "path": "assignments/02-typescript-data-boundary.md" },
-    { "id": "ms-react-ui", "moduleId": "react", "path": "assignments/03-react-accessible-list.md" },
-    { "id": "ms-next-route", "moduleId": "nextjs", "path": "assignments/04-next-route-action.md" },
-    { "id": "ms-realworld-ci", "moduleId": "quality-ci", "path": "assignments/05-quality-ci.md" },
-    { "id": "ms-ai-workflow", "moduleId": "responsible-ai", "path": "assignments/06-responsible-ai.md" },
-    { "id": "capstone-frontend", "moduleId": "capstone", "path": "assignments/07-capstone.md" }
+    { "id": "ms-git-collab", "moduleId": "git-github", "path": "assignments/01-git-collaboration.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
+    { "id": "ms-ts-types", "moduleId": "typescript", "path": "assignments/02-typescript-data-boundary.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
+    { "id": "ms-react-ui", "moduleId": "react", "path": "assignments/03-react-accessible-list.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
+    { "id": "ms-next-route", "moduleId": "nextjs", "path": "assignments/04-next-route-action.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
+    { "id": "ms-realworld-ci", "moduleId": "quality-ci", "path": "assignments/05-quality-ci.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
+    { "id": "ms-ai-workflow", "moduleId": "responsible-ai", "path": "assignments/06-responsible-ai.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
+    { "id": "capstone-frontend", "moduleId": "capstone", "path": "assignments/07-capstone.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } }
   ]
 }

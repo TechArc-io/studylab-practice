@@ -1,5 +1,7 @@
 # `ms-ts-types` — Type a data boundary
 
+Follow the shared [`docs/git-workflow.md`](../docs/git-workflow.md) and submit the reviewed PR from your fork in Astudylab.
+
 **Outcome:** model domain states precisely and validate unknown data before it reaches UI code.
 
 ## Scenario

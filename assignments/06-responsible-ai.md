@@ -1,5 +1,7 @@
 # `ms-ai-workflow` — Deliver a defensible AI-assisted change
 
+Follow the shared [`docs/git-workflow.md`](../docs/git-workflow.md) and submit the reviewed PR from your fork in Astudylab.
+
 **Outcome:** use AI as assistance while preserving privacy, judgment, and evidence.
 
 ## Scenario

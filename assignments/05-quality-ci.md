@@ -1,5 +1,7 @@
 # `ms-realworld-ci` — Add tests and a green CI pipeline
 
+Follow the shared [`docs/git-workflow.md`](../docs/git-workflow.md) and submit the reviewed PR from your fork in Astudylab.
+
 **Outcome:** design a proportionate safety net and make it reproducible on every pull request.
 
 ## Scenario
@@ -11,7 +13,7 @@ Choose one behavior added in an earlier assignment whose regression would harm a
 1. Create `assignment/ms-realworld-ci` from updated `main`.
 2. Write down the failure you want the test to catch.
 3. Prove the new test fails for the broken behavior, then restore the implementation.
-4. Improve `.github/workflows/ci.yml` so pull requests run install, lint, typecheck, tests, and build with dependency caching and least privilege.
+4. Improve one diagnostic detail in `.github/workflows/ci.yml` without renaming or weakening the required `Practice quality` job. The baseline already runs install, lint, typecheck, catalog validation, tests, and build.
 5. Keep passing output concise and make failures point to the affected layer.
 
 ## Acceptance checks
