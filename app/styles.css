@@ -1,0 +1,49 @@
+:root {
+  color-scheme: light;
+  --background: #f3f6fc;
+  --surface: #ffffff;
+  --ink: #111827;
+  --muted: #52617a;
+  --border: #d8e0ee;
+  --brand: #2563eb;
+  --brand-dark: #1d4ed8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+main {
+  width: min(100% - 2rem, 70rem);
+  margin-inline: auto;
+  padding-block: 4rem;
+}
+
+.hero { max-width: 46rem; margin-bottom: 2rem; }
+.eyebrow { margin: 0 0 .5rem; color: var(--brand-dark); font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+h1, h2 { margin: 0; line-height: 1.15; }
+h1 { font-size: clamp(2.25rem, 6vw, 4.5rem); letter-spacing: -.04em; }
+h2 { font-size: 1.5rem; }
+.lede { color: var(--muted); font-size: 1.125rem; }
+.panel { border: 1px solid var(--border); border-radius: 1rem; background: var(--surface); padding: clamp(1rem, 4vw, 2rem); box-shadow: 0 .75rem 2.5rem rgb(38 55 84 / 8%); }
+.section-heading { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; }
+a { color: var(--brand-dark); font-weight: 700; }
+.filter { display: grid; gap: .5rem; margin-bottom: 1rem; }
+.filter label { font-size: .875rem; font-weight: 700; }
+.filter input { width: 100%; min-height: 2.75rem; border: 1px solid var(--border); border-radius: .625rem; padding-inline: .875rem; font: inherit; }
+.filter input:focus { outline: 3px solid rgb(37 99 235 / 25%); border-color: var(--brand); }
+.practice-list { display: grid; gap: .75rem; padding: 0; list-style: none; }
+.practice-card { border: 1px solid var(--border); border-radius: .75rem; padding: 1rem; }
+.practice-card p { margin: .25rem 0 0; color: var(--muted); }
+.status { display: inline-block; margin-top: .75rem; border-radius: 999px; background: #e8efff; color: var(--brand-dark); padding: .2rem .6rem; font-size: .75rem; font-weight: 700; }
+.empty { border: 1px dashed var(--border); border-radius: .75rem; color: var(--muted); padding: 1rem; text-align: center; }
+
+@media (max-width: 40rem) {
+  main { padding-block: 2rem; }
+}

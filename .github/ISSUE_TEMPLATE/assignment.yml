@@ -1,0 +1,30 @@
+name: Practice assignment
+description: Propose a bounded learning task aligned with an Astudylab module.
+title: "[Assignment]: "
+labels: ["practice"]
+body:
+  - type: input
+    id: module
+    attributes:
+      label: Astudylab module ID
+      placeholder: react-data
+    validations:
+      required: true
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Realistic scenario and learner outcome
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Observable acceptance checks
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Expected verification and evidence
+    validations:
+      required: true

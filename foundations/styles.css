@@ -1,0 +1,20 @@
+:root {
+  --ink: #172033;
+  --muted: #52617a;
+  --brand: #1d4ed8;
+  --border: #cdd7e7;
+  --surface: #ffffff;
+  --background: #f4f7fb;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--background); color: var(--ink); font: 1rem/1.6 system-ui, sans-serif; }
+.site-header, main { width: min(100% - 2rem, 48rem); margin-inline: auto; }
+.site-header { display: flex; align-items: center; justify-content: space-between; padding-block: 1rem; }
+.brand { font-weight: 800; }
+main { background: var(--surface); border: 1px solid var(--border); border-radius: 1rem; padding: clamp(1rem, 5vw, 2.5rem); }
+form { display: grid; gap: .75rem; }
+label { font-weight: 700; }
+textarea { width: 100%; border: 1px solid var(--border); border-radius: .5rem; padding: .75rem; font: inherit; }
+button { justify-self: start; border: 0; border-radius: .5rem; background: var(--brand); color: white; padding: .75rem 1rem; font: inherit; font-weight: 700; }
+button:focus-visible, textarea:focus-visible, a:focus-visible { outline: 3px solid #93c5fd; outline-offset: 3px; }
