@@ -16,16 +16,20 @@
     "nextjs",
     "server-data-security",
     "quality-ci",
-    "responsible-ai",
-    "capstone"
+    "responsible-ai"
   ],
   "assignments": [
-    { "id": "ms-git-collab", "moduleId": "git-github", "path": "assignments/01-git-collaboration.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
-    { "id": "ms-ts-types", "moduleId": "typescript", "path": "assignments/02-typescript-data-boundary.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
-    { "id": "ms-react-ui", "moduleId": "react", "path": "assignments/03-react-accessible-list.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
-    { "id": "ms-next-route", "moduleId": "nextjs", "path": "assignments/04-next-route-action.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
-    { "id": "ms-realworld-ci", "moduleId": "quality-ci", "path": "assignments/05-quality-ci.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
-    { "id": "ms-ai-workflow", "moduleId": "responsible-ai", "path": "assignments/06-responsible-ai.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
-    { "id": "capstone-frontend", "moduleId": "capstone", "path": "assignments/07-capstone.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } }
+    { "id": "tt-fork-first-pr", "moduleId": "git-github", "tier": "practice", "path": "assignments/08-first-fork-pr.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
+    { "id": "tt-responsive-navbar", "moduleId": "react", "tier": "practice", "path": "assignments/09-responsive-navbar.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
+    { "id": "tt-fix-broken-fetch", "moduleId": "react", "tier": "practice", "path": "assignments/10-resilient-data-states.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
+    { "id": "tt-404-page", "moduleId": "nextjs", "tier": "practice", "path": "assignments/11-app-router-not-found.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
+    { "id": "tt-deploy-vercel", "moduleId": "quality-ci", "tier": "practice", "path": "assignments/12-vercel-deployment.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
+    { "id": "ms-git-collab", "moduleId": "git-github", "tier": "milestone", "path": "assignments/01-git-collaboration.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
+    { "id": "ms-ts-types", "moduleId": "typescript", "tier": "milestone", "path": "assignments/02-typescript-data-boundary.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
+    { "id": "ms-react-ui", "moduleId": "react", "tier": "milestone", "path": "assignments/03-react-accessible-list.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
+    { "id": "ms-next-route", "moduleId": "nextjs", "tier": "milestone", "path": "assignments/04-next-route-action.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
+    { "id": "ms-realworld-ci", "moduleId": "quality-ci", "tier": "milestone", "path": "assignments/05-quality-ci.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
+    { "id": "ms-ai-workflow", "moduleId": "responsible-ai", "tier": "milestone", "path": "assignments/06-responsible-ai.md", "submission": { "target": "learner-fork", "evidence": "github-pr", "requiredChecks": ["Practice quality"] } },
+    { "id": "capstone-frontend", "moduleId": "quality-ci", "tier": "capstone", "path": "assignments/07-capstone.md", "submission": { "target": "learner-fork", "evidence": "deployment", "requiredChecks": ["Practice quality"] } }
   ]
 }
