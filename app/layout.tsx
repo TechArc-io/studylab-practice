@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./styles.css";
+import { Navbar } from "@/src/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Astudylab Practice",
@@ -9,7 +10,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
